@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>BALEX LIBRARY</title>
+		<meta charset="utf-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+
+
+		<title>Menu Desplegable</title>
+		<style type="text/css">
+		body{
+			font-family: 'Times New Roman';
+			background-color: #F5CB96;
+		}
+			* {
+				margin:0px;
+				padding:0px;
+			}
+			body{
+	padding: 0;
+	margin: 0;
+	font-family: Arial;
+	background-color: #D0B17A;
+}
+nav {
+	margin: 27px auto 0;
+	position: relative;
+	width: 590px;
+	height: 50px;
+	background-color: #A89F68;
+	border-radius: 8px;
+	font-size: 0;
+	color: white;
+}
+nav a {
+	line-height: 50px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+nav .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+a:nth-child(1) {
+	width: 100px;
+}
+a:nth-child(2) {
+	width: 110px;
+}
+a:nth-child(3) {
+	width: 100px;
+}
+a:nth-child(4) {
+	width: 160px;
+}
+a:nth-child(5) {
+	width: 120px;
+}
+nav .start-home, a:nth-child(1):hover~.animation {
+	width: 100px;
+	left: 0;
+	background-color: #846C5B;
+}
+nav .start-about, a:nth-child(2):hover~.animation {
+	width: 110px;
+	left: 100px;
+	background-color: #846C5B;
+}
+nav .start-blog, a:nth-child(3):hover~.animation {
+	width: 100px;
+	left: 210px;
+	background-color: #846C5B;
+}
+nav .start-portefolio, a:nth-child(4):hover~.animation {
+	width: 160px;
+	left: 310px;
+	background-color: #846C5B;
+}
+nav .start-contact, a:nth-child(5):hover~.animation {
+	width: 120px;
+	left: 470px;
+	background-color: #846C5B;
+}
+h1 {
+	text-align: center;
+	margin: 40px 0 40px;
+	text-align: center;
+	font-size: 30px;
+	color: #ecf0f1;
+	text-shadow: 2px 2px 4px #000000;
+	font-family: 'Cherry Swash', cursive;
+}
+
+p{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: #ecf0f1;
+    font-family: 'Cherry Swash',cursive;
+    font-size: 16px;
+    margin-top: 100px;
+}
+
+span {
+    color: #2BD6B4;
+}
+
+span{
+	position: relative;
+}
+span::after{ /* #fffcd6 */
+	background-color: #fffcd6;
+	content: '';
+	width: 100%;
+	height: 50%;
+	position: absolute;
+	bottom: -4px;
+	left: 0;
+	z-index: -1;
+}
+
+p a{ /* #184DA8 */
+	color: #184DA8;
+	text-decoration: none;
+}
+p a:hover{ /* #184DA8 */
+	text-decoration: underline;
+}
+
+.center-align{
+	margin: 0 auto;
+	width: 1100px;
+}
+
+.black{color: black;}
+.white{color: white;}
+
+.section-columns{
+}
+.section-columns > div{
+	display: inline-block;
+	vertical-align: top;
+	width: 49%;
+}
+
+.section-columns h2{
+	font-size: 72px;
+}
+
+#intro-container .section-columns h2{
+	padding-top: 120px;
+	padding-bottom: 30px;
+}
+
+.section-columns h3{
+	font-size: 26px;
+	font-weight: lighter;
+	line-height: 40px;
+}
+.section-columns p{
+	font-weight: lighter;
+	font-size: 16px;
+	line-height: 30px;
+	padding-bottom: 10px;
+}
+
+
+.section-columns #image-bg{
+	background-image: url('');
+	background-repeat: no-repeat;
+	background-size: 750px;
+	background-position: -140px -80px;
+	height: 600px;
+}
+.section-columns #image-bg-02{
+	
+}
+
+.section-columns #bio{
+	height: 600px;
+}
+
+#work, #work02, #work03, #work04{
+	background-repeat: no-repeat;
+	background-size: 750px;
+	background-position: right center;
+	height: 600px;
+	padding-top: 150px;
+	margin-top: -50px;	
+}
+#footer{
+	margin-top: -50px;
+	padding-top: 50px;
+	height: 550px;
+	background-size: 100%;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+}
+
+#footer h3{color: white; padding-top: 70px; margin: 0;}
+#footer p {color: gray; padding-bottom: 30px;}
+
+.rectangle{
+	height: 100px;
+	margin-top: -50px;
+}
+.bg-white{
+	background-color: white;
+}
+.bg-gray{
+	background-color: #666;
+}
+.bg-black{
+	background-color: #000;
+}
+
+
+
+.skew-left{
+	transform: skewY(-4deg);
+}
+.skew-right{
+	transform: skewY(4deg);
+}
+
+.btn{
+	border: solid 1px;
+	padding: 20px 40px;
+	text-decoration: none;
+	margin-right: 10px;
+}
+.btn-black{
+	border-color: black;
+	color: black;
+}
+.btn-black:hover{
+	background-color: black;
+	border-color: white;
+	color: white;
+}
+.btn-white{
+	border-color: white;
+	color: white;
+}
+
+.btn-white:hover{
+	background-color: white;
+	border-color: black;
+	color: black;
+}
+
+#intro-container{
+	background-color: black;
+	padding-top: 100px;
+	height: 700px;
+}
+
+#intro-container nav{
+	margin: 0;
+	padding: 0;
+}
+
+#intro-container nav div{
+	display: inline-block;
+	vertical-align: top;
+}
+
+#intro-container nav #logo{
+	width: 9%;
+
+}
+
+#intro-container nav #menu-lista{
+	width: 89%;
+	text-align: right;
+}
+#intro-container nav #menu-lista ul{
+	margin: 0;
+	padding: 0;
+}
+#intro-container nav #menu-lista ul li{
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+#intro-container nav #menu-lista ul li a{
+	color: #777;
+	text-decoration: none;
+}
+
+#intro-container nav #menu-lista ul li a:hover{
+	color: white;
+	text-decoration: white;
+}
+.logo{
+	width: 500px;
+	margin-left: 700px;
+	margin-top: 5px;
+	
+}
+h2{
+	margin-top: -70px;
+	margin-left: 150px;
+	text-shadow: 1px 1px 2px white;
+}
+h3{
+	font-size: 32px;
+	margin-top: 100px;
+	text-shadow: 1px 1px 2px blue;
+}
+h4{
+	margin-top: -600px;
+	text-shadow: 1px 1px 2px white;
+}
+ .card{
+ 	margin-top: -600px;
+	background:red;
+}	
+.title {
+  font-family: "Raleway";
+  font-size: 24px;
+  font-weight: 700;
+  color: #5D4037;
+  text-align: center;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+ p, p + p {
+  margin-top: 10px;
+}
+
+.container {
+  padding: 40px 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: -150px;
+}
+
+.card-wrap {
+  margin: 10px;
+  transform: perspective(800px);
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+.card-wrap:hover .card-info {
+  transform: translateY(0);
+}
+.card-wrap:hover .card-info p {
+  opacity: 1;
+}
+.card-wrap:hover .card-info, .card-wrap:hover .card-info p {
+  transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.card-wrap:hover .card-info:after {
+  transition: 5s cubic-bezier(0.23, 1, 0.32, 1);
+  opacity: 1;
+  transform: translateY(0);
+}
+.card-wrap:hover .card-bg {
+  transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1), opacity 5s cubic-bezier(0.23, 1, 0.32, 1);
+  opacity: 0.8;
+}
+.card-wrap:hover .card {
+  transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 2s cubic-bezier(0.23, 1, 0.32, 1);
+  box-shadow: rgba(255, 255, 255, 0.2) 0 0 40px 5px, white 0 0 0 1px, rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px, inset white 0 0 0 6px;
+}
+.card {
+  position: relative;
+  flex: 0 0 240px;
+  width: 240px;
+  height: 320px;
+  background-color: #333;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px, inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
+  transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
+}
+
+.card-bg {
+  opacity: 0.5;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95), opacity 5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  pointer-events: none;
+}
+
+.card-info {
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  transform: translateY(40%);
+  transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.card-info p {
+  opacity: 0;
+  text-shadow: black 0 2px 3px;
+  transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.card-info * {
+  position: relative;
+  z-index: 1;
+}
+.card-info:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.6) 100%);
+  background-blend-mode: overlay;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: 5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.card-info h1 {
+  font-family: "Playfair Display";
+  font-size: 36px;
+  font-weight: 700;
+  text-shadow: rgba(0, 0, 0, 0.5) 0 10px 10px;
+}
+.container1{
+	margin-top: 320px;
+}
+h5{
+	margin-top: -250px;
+	text-shadow: 0.1em 0.1em 0.2em tomato;
+}
+.textoo{
+	margin-top: 400px;
+}
+.a:hover{
+	color: white;
+}
+.white{
+	text-shadow: 6px 6px 20px #846C5B;
+}
+		</style>
+	</head>
+	<body>
+<nav>
+	<a class="a" href="#">Home</a>
+	<a class="a" href="registrar.html">Registrar</a>
+	<a class="a" href="consultar.html">Consultar</a>
+	<a class="a" href="eliminar.html">Eliminar</a>
+	<a class="a" href="hrs_trabajadas.html">Calcular</a>
+	<div class="animation start-home"></div>
+</nav>
+		<section id="intro-container">
+			<div class="center-align">
+				<nav>
+					<div id="logo"><img class="logo" src="logo.png" alt=""></div>
+					<div>
+						</div>
+				</nav>
+				<div class="section-columns">
+					<div>
+						<h2 class="white">BALEX LIBRARY</h2>
+						<div class="btn-section">	
+						</div>
+					</div>
+					<div id="image-bg">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="rectangle bg-white skew-left"></div>
+		
+		<div class="section" id="about-section">
+			<div class="center-align">
+				<div class="section-columns">
+					<div>
+						<h3 style="font-size: 52px;">Productos Y Mas</h3>
+						
+					</div>
+
+					<div id="bio">
+
+						<h3>Tenemos libros unicos que en ninguna otra biblioteca lo encontraras!</h3>
+						<div class="btn-section">
+							<a href="http://localhost:8080/Humberto/Proyecto%20DW/html/8.html" class="btn btn-black">Ver mas...</a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="rectangle bg-gray skew-right"></div>
+		<div class="section bg-gray" id="work">
+			<div class="center-align">
+				<div class="section-columns" >
+					<div>
+						<div class="btn-section"><center>
+							<h5>Libros en venta</h5>
+							</center>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><br><br>
+
+
+<div id="app" class="container">
+  <card data-image="https://images.unsplash.com/photo-1479660656269-197ebb83b540?dpr=2&auto=compress,format&fit=crop&w=1199&h=798&q=80&cs=tinysrgb&crop=">
+    <h1 slot="header">Anna Karenina</h1>
+    <p slot="content">En una Rusia fría y lejana una chica se enamora y se arriesga. No es fácil en una sociedad tan estructurada y el dolor se hace parte de su vida.</p>
+  </card>
+  <card data-image="https://images.unsplash.com/photo-1479644025832-60dabb8be2a1?dpr=2&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=">
+    <h1 slot="header">Las Aventuras de Huckleberry Finn</h1>
+    <p slot="content">Huck es un chico que vive en la calle y luego pasa a vivir con una señora rica, aunque eso no le impida meterse en problemas cada vez que puede.</p>
+  </card>
+  <card data-image="https://images.unsplash.com/photo-1479621051492-5a6f9bd9e51a?dpr=2&auto=compress,format&fit=crop&w=1199&h=811&q=80&cs=tinysrgb&crop=">
+    <h1 slot="header">Hamlet</h1>
+    <p slot="content">William Shakespeare no podía faltar en esta lista por haber escrito algunas de las tragedias más famosas de la historia.</p>
+  </card>
+  <div>
+  	<div class="container1">
+  <div class="row">
+    <div class="col order-last">
+     <card data-image="https://images.unsplash.com/photo-1479660656269-197ebb83b540?dpr=2&auto=compress,format&fit=crop&w=1199&h=798&q=80&cs=tinysrgb&crop=">
+    <h1 slot="header">En busca del tiempo perdido</h1>
+    <p slot="content">Esta obra está conformada por 7 volúmenes que recopilan la vida de una persona mientras crece, se enamora y supera conflictos de su vida.</p>
+  </card>
+    </div>
+    <div class="col">
+     <card data-image="https://images.unsplash.com/photo-1479659929431-4342107adfc1?dpr=2&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=">
+    <h1 slot="header">Don Quijote de la Mancha</h1>
+    <p slot="content">En una época donde las historias de caballería eran populares pero cuestionadas, Miguel de Cervantes crea a Don Quijote de la Mancha para burlarse de un estereotipo de héroe.</p>
+  </card>
+    </div>
+    <div class="col order-first">
+       <card data-image="https://images.unsplash.com/photo-1479621051492-5a6f9bd9e51a?dpr=2&auto=compress,format&fit=crop&w=1199&h=811&q=80&cs=tinysrgb&crop=">
+    <h1 slot="header">El Señor de los Anillos</h1>
+    <p slot="content">Si, parece un poco extraño poner este libro en una lista tan clásica, pero lo cierto es que El Señor de los Anillos, además de popular, es uno de los más famosos y destacados de la historia, con millones de ventas alrededor del mundo.</p>
+  </card>
+    </div>
+  </div>
+</div>
+  </div>
+
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js'></script><script  src="./script.js"></script></body>
+</html>

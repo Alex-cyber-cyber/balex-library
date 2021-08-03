@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body{
+			background-color: #846C5B;
+			font-family: 'Times New Roman';
+		}
+		.card{
+			width: 900px;
+			margin-top: 20px;
+  box-shadow: 5px 10px 18px #EDD9A3;
+  text-align: center;
+		}
+		.card{
+			 background-color: #D8BFAA;
+		}
+		h5{
+			font-size: 32px;
+		}
+	</style>
+</head>
+<body>
+<center>
+<div class="card" style="width: 28rem;">
+
+  <div class="card-body">
+    <h5 class="card-title">Ingreso de libros</h5>
+   	<form  method="post" action="libro2.php"> 
+
+<p>Nombre del libro</p>
+<input type="text" name="nombre_libro"
+size="30"  autofocus>
+<hr>
+<p>Nombre de autor</p>
+<input type="text" name="nombre_autor" size="30"
+><hr>
+<p>codigo</p>
+<input type="text" name="codigo" size="30" maxlength="5">
+<hr>
+<p>fecha</p>
+<input type="text" name="fecha">
+<hr>
+
+<td align=center>
+<input type="submit" value="Guardar Registro">
+<input type="reset" value="Limpiar formulario">
+
+</form>
+  </div>
+</div>
+</center>
+</body>
+</html>
